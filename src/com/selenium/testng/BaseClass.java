@@ -17,8 +17,8 @@ public class BaseClass {
 
 	// @BeforeMethod //--> BM-t1-AM -- BM-t2-AM -- BM-t3-AM flow like this
 	// @BeforeClass --> BC-t1-t2-t3-AC
-	//@Parameters
-	//@BeforeClass
+	// @Parameters
+	// @BeforeClass
 	@BeforeTest
 	public void openBrowser() {
 		Reporter.log("=======Browser session started========", true);
@@ -31,11 +31,11 @@ public class BaseClass {
 	}
 
 	// @AfterMethod
-	//@Parameters
-	//@AfterClass
+	// @Parameters
+	// @AfterClass
 	@AfterTest
-	public void closeBrowser() {
-
+	public void closeBrowser() throws InterruptedException {
+		Thread.sleep(10000);
 		driver.quit();
 		Reporter.log("=======Browser session end========", true);
 	}
