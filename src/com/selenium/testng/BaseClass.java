@@ -1,4 +1,4 @@
-package com.selenium.packge;
+package com.selenium.testng;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
