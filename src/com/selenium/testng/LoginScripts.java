@@ -8,7 +8,7 @@ public class LoginScripts extends BaseClass {
 	@Test(description="this TC perform valid logintomyapp")
 	public void logintoMyapp() throws InterruptedException {
 
-		driver.findElement(By.id("email")).sendKeys("venkatramreddy108@gmail.com");
+		driver.findElement(By.id("email")).sendKeys("venkatramreddy107@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("9247739447");
 		driver.findElement(By.id("loginbutton")).click();
 		Thread.sleep(5000);
