@@ -12,7 +12,7 @@ public class LoginScripts extends BaseClass {
 System.out.println("befor class");
 	}
 
-	@Test(description = "this TC perform valid logintomyapp",priority=0)
+	@Test(description = "this TC perform valid logintomyapp",priority=2)
 	public void logintoMyapp() throws InterruptedException {
 
 		driver.findElement(By.id("email")).sendKeys("venkatramreddy107@gmail.com");
